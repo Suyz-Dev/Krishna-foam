@@ -10,6 +10,86 @@
   *{margin:0;padding:0;box-sizing:border-box;}
   body{font-family:'Lato',sans-serif;color:var(--text);background:#fff;overflow-x:hidden;}
 
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 768px) {
+    .header-inner { padding: 0 12px; height: 64px; gap: 12px; }
+    .logo .brand { font-size: 18px; }
+    .search-bar { max-width: none; }
+    .phone-strip { display: none; }
+    .header-actions { gap: 12px; }
+    .action-btn span { display: none; }
+    .nav-inner { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .nav-item { font-size: 12px; padding: 13px 12px; }
+    .hero { min-height: 500px; }
+    .hero-inner { padding: 40px 16px; }
+    .hero-title { font-size: clamp(24px, 8vw, 42px); margin-bottom: 20px; }
+    .hero-lookup-label { font-size: 20px; }
+    .hero-lookup-row { flex-direction: column; gap: 0; }
+    .hero-lookup-select { border-radius: 6px; margin-bottom: 8px; }
+    .hero-lookup-btn { border-radius: 6px; width: 100%; }
+    .slider-arrow { width: 36px; height: 36px; font-size: 16px; }
+    .slider-arrow.prev { left: 10px; }
+    .slider-arrow.next { right: 10px; }
+    .trust-inner { grid-template-columns: repeat(2, 1fr); }
+    .trust-item { padding: 12px 16px; }
+    .container { padding: 0 16px; }
+    .categories { padding: 40px 0; }
+    .vehicle-selector { padding: 20px 16px; margin-bottom: 24px; }
+    .vs-fields { flex-direction: column; }
+    .vs-select { min-width: 100%; }
+    .vs-btn { width: 100%; }
+    .cat-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .cat-card { padding: 16px 10px; }
+    .cat-card .icon-wrap { width: 48px; height: 48px; }
+    .products-sec { padding: 40px 0; }
+    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .product-img { height: 160px; }
+    .product-info { padding: 12px; }
+    .product-name { font-size: 12.5px; height: 34px; }
+    .promo-section { padding: 30px 0; }
+    .promo-grid { grid-template-columns: 1fr; }
+    .promo-banner { min-height: 180px; padding: 24px; }
+    .promo-title { font-size: 20px; }
+    .brands-grid { grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    .brand-pill { font-size: 11px; padding: 10px 6px; }
+    .testimonials { padding: 40px 0; }
+    .testi-grid { grid-template-columns: 1fr; }
+    .newsletter { padding: 30px 0; }
+    .newsletter h2 { font-size: 22px; }
+    .newsletter-form { flex-direction: column; }
+    .newsletter-form input { border-radius: 4px 4px 0 0; }
+    .newsletter-form button { border-radius: 0 0 4px 4px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    .section-header h2 { font-size: 22px; }
+  }
+
+  @media (max-width: 480px) {
+    .header-inner { padding: 0 10px; }
+    .logo .brand { font-size: 16px; }
+    .search-bar input { padding: 0 10px; font-size: 13px; }
+    .search-bar button { padding: 0 14px; font-size: 12px; }
+    .cart-count .badge { width: 16px; height: 16px; font-size: 9px; }
+    .hero { min-height: 420px; }
+    .hero-inner { padding: 30px 12px; }
+    .hero-badge { font-size: 12px; padding: 7px 14px; }
+    .hero-title { font-size: clamp(20px, 9vw, 32px); }
+    .hero-lookup-label { font-size: 17px; }
+    .hero-lookup-select { padding: 14px 16px; font-size: 15px; }
+    .hero-lookup-btn { padding: 14px 20px; font-size: 14px; }
+    .cat-grid { grid-template-columns: repeat(2, 1fr); }
+    .cat-card .cat-name { font-size: 11px; }
+    .product-grid { grid-template-columns: repeat(2, 1fr); }
+    .product-img { height: 140px; }
+    .price-new { font-size: 15px; }
+    .add-cart-btn { font-size: 11px; padding: 8px; }
+    .promo-banner { padding: 20px; }
+    .promo-title { font-size: 18px; }
+    .promo-sub { font-size: 12px; }
+    .brands-grid { grid-template-columns: repeat(3, 1fr); }
+    .section-header h2 { font-size: 20px; }
+  }
+
   /* TICKER */
   .ticker{background:var(--gold);padding:8px 0;overflow:hidden;white-space:nowrap;}
   .ticker-inner{display:inline-block;animation:ticker 30s linear infinite;font-family:'Montserrat',sans-serif;font-size:12.5px;font-weight:700;color:var(--dark);}
